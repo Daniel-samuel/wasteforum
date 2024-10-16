@@ -14,6 +14,7 @@
         </div>
         <div class="flex flex-col space-y-6">
           <p
+            v-if="data"
             class="text-2xl font-bold space-y-6 leading-loose md:text-5xl md:leading-loose md:font-semibold"
           >
             Welcome <br /><span class="bg-[#5CF8AD] text-black px-2 py-2">
