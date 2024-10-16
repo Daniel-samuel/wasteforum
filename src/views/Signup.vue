@@ -17,7 +17,7 @@
         <label class="relative">
           <input
             type="text"
-            class="w-84 pl-6 py-4 text-sm outline-none border-2 border-gray-400 rounded-3xl hover:border-gray-600 durarion -200 peer focus:border-[#5CF8AD] bg-inherit"
+            class="w-84 pl-6 py-4 text-md outline-none border-2 border-gray-400 rounded-3xl hover:border-gray-600 durarion -200 peer focus:border-[#5CF8AD] bg-inherit"
             v-model="args.name"
             required
           />
@@ -30,7 +30,7 @@
         <label class="relative">
           <input
             type="text"
-            class="w-84 pl-6 py-4 text-sm outline-none border-2 border-gray-400 rounded-3xl hover:border-gray-600 durarion -200 peer focus:border-[#5CF8AD] bg-inherit"
+            class="w-84 pl-6 py-4 text-md outline-none border-2 border-gray-400 rounded-3xl hover:border-gray-600 durarion -200 peer focus:border-[#5CF8AD] bg-inherit"
             v-model="args.number"
             required
           />
@@ -43,7 +43,7 @@
         <label class="relative">
           <input
             type="email"
-            class="w-84 pl-6 py-4 text-sm outline-none border-2 border-gray-400 rounded-3xl hover:border-gray-600 durarion -200 peer focus:border-[#5CF8AD] bg-inherit"
+            class="w-84 pl-6 py-4 text-md outline-none border-2 border-gray-400 rounded-3xl hover:border-gray-600 durarion -200 peer focus:border-[#5CF8AD] bg-inherit"
             v-model="args.email"
             required
           />
@@ -56,7 +56,7 @@
         <label class="relative">
           <input
             type="text"
-            class="w-84 pl-6 py-4 text-sm outline-none border-2 border-gray-400 rounded-3xl hover:border-gray-600 durarion -200 peer focus:border-[#5CF8AD] bg-inherit"
+            class="w-84 pl-6 py-4 text-md outline-none border-2 border-gray-400 rounded-3xl hover:border-gray-600 durarion -200 peer focus:border-[#5CF8AD] bg-inherit"
             v-model="args.company"
             required
           />
@@ -75,7 +75,7 @@
           /> -->
 
           <select
-            class="w-84 pl-6 pr-12 py-4 text-sm outline-none border-2 border-gray-400 rounded-3xl hover:border-gray-600 durarion -200 peer focus:border-[#5CF8AD] bg-inherit"
+            class="w-84 pl-6 pr-12 py-4 text-md outline-none border-2 border-gray-400 rounded-3xl hover:border-gray-600 durarion -200 peer focus:border-[#5CF8AD] bg-inherit"
             name="role"
             id=""
             v-model="args.role"
