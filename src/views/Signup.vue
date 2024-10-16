@@ -127,6 +127,9 @@ const loading = ref(false);
 const register = async () => {
   loading.value = true;
   try {
+    if (args.value.role.length === 0) {
+      throw new Error("Role is required");
+    }
     const res = await mutate({
       endpoint: "CreateRegister",
       data: { input: args.value },
@@ -138,6 +141,7 @@ const register = async () => {
       router.push({ name: "Home" });
     }
   } catch (e) {
+    toast.error(e.message);
     console.log(e);
   } finally {
     loading.value = false;
