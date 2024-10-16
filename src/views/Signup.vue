@@ -11,7 +11,7 @@
           <p class="text-[#5CF8AD] text-2xl font-medium">Lawma</p>
         </div>
 
-        <p>Keeping lagos clean</p>
+        <p>Shakeholder's Forum</p>
       </div>
       <div class="w-full items-center flex flex-col space-y-6">
         <label class="relative">
@@ -22,7 +22,7 @@
             required
           />
           <span
-            class="absolute left-0 top-4 px-4 text-sm text-gray-400 tracking-wide peer-focus:text-[#5CF8AD] pointer-event-none duration-200 peer-focus:text-sm peer-focus:-translate-y-6 bg-black ml-6"
+            class="absolute left-0 top-4 px-4 text-sm text-gray-400 tracking-wide peer-focus:text-[#5CF8AD] pointer-event-none duration-200 peer-focus:text-sm peer-focus:-translate-y-6 bg-black ml-6 peer-valid:text-sm peer-valid:-translate-y-6"
             >Full Name</span
           >
         </label>
@@ -35,7 +35,7 @@
             required
           />
           <span
-            class="absolute left-0 top-4 px-4 text-sm text-gray-400 tracking-wide peer-focus:text-[#5CF8AD] pointer-event-none duration-200 peer-focus:text-sm peer-focus:-translate-y-6 bg-black ml-6"
+            class="absolute left-0 top-4 px-4 text-sm text-gray-400 tracking-wide peer-focus:text-[#5CF8AD] pointer-event-none duration-200 peer-focus:text-sm peer-focus:-translate-y-6 bg-black ml-6 peer-valid:text-sm peer-valid:-translate-y-6"
             >Phone Number</span
           >
         </label>
@@ -48,7 +48,7 @@
             required
           />
           <span
-            class="absolute left-0 top-4 px-4 text-sm text-gray-400 tracking-wide peer-focus:text-[#5CF8AD] pointer-event-none duration-200 peer-focus:text-sm peer-focus:-translate-y-6 bg-black ml-6"
+            class="absolute left-0 top-4 px-4 text-sm text-gray-400 tracking-wide peer-focus:text-[#5CF8AD] pointer-event-none duration-200 peer-focus:text-sm peer-focus:-translate-y-6 bg-black ml-6 peer-valid:text-sm peer-valid:-translate-y-6"
             >Email</span
           >
         </label>
@@ -61,8 +61,8 @@
             required
           />
           <span
-            class="absolute left-0 top-4 px-4 text-sm text-gray-400 tracking-wide peer-focus:text-[#5CF8AD] pointer-event-none duration-200 peer-focus:text-sm peer-focus:-translate-y-6 bg-black ml-6"
-            >Company Name</span
+            class="absolute left-0 top-4 px-4 text-sm text-gray-400 tracking-wide peer-focus:text-[#5CF8AD] pointer-event-none duration-200 peer-focus:text-sm peer-focus:-translate-y-6 bg-black ml-6 peer-valid:text-sm peer-valid:-translate-y-6"
+            >Company</span
           >
         </label>
 
@@ -85,7 +85,7 @@
             <option class="text-[#000]" value="REGULAR">REGULAR</option>
           </select>
           <span
-            class="absolute left-0 top-4 px-4 text-sm text-gray-400 tracking-wide peer-focus:text-[#5CF8AD] pointer-event-none duration-200 peer-focus:text-sm peer-focus:-translate-y-6 bg-black ml-6"
+            class="absolute left-0 top-4 px-4 text-sm text-gray-400 tracking-wide peer-focus:text-[#5CF8AD] pointer-event-none duration-200 peer-focus:text-sm peer-focus:-translate-y-6 bg-black ml-6 peer-valid:text-sm peer-valid:-translate-y-6"
             >Role</span
           >
         </label>

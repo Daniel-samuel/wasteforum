@@ -10,7 +10,7 @@
           <p class="text-[#5CF8AD] text-2xl font-medium">Lawma</p>
         </div>
 
-        <p>Keeping lagos clean</p>
+        <p>Shakeholder's Forum</p>
       </div>
       <div class="w-full items-center flex flex-col space-y-6">
         <label class="relative">
@@ -21,8 +21,8 @@
             v-model="args.email"
           />
           <span
-            class="absolute left-0 top-4 px-4 text-sm text-gray-400 tracking-wide peer-focus:text-[#5CF8AD] pointer-event-none duration-200 peer-focus:text-sm peer-focus:-translate-y-6 bg-black ml-6"
-            >Email</span
+            class="absolute left-0 top-4 px-4 text-sm text-gray-400 tracking-wide peer-focus:text-[#5CF8AD] pointer-event-none duration-200 peer-focus:text-sm peer-focus:-translate-y-6 bg-black ml-6 peer-valid:text-sm peer-valid:-translate-y-6"
+            >Full Name</span
           >
         </label>
 
@@ -34,8 +34,8 @@
             v-model="args.number"
           />
           <span
-            class="absolute left-0 top-4 px-4 text-sm text-gray-400 tracking-wide peer-focus:text-[#5CF8AD] pointer-event-none duration-200 peer-focus:text-sm peer-focus:-translate-y-6 bg-black ml-6"
-            >Phone Number</span
+            class="absolute left-0 top-4 px-4 text-sm text-gray-400 tracking-wide peer-focus:text-[#5CF8AD] pointer-event-none duration-200 peer-focus:text-sm peer-focus:-translate-y-6 bg-black ml-6 peer-valid:text-sm peer-valid:-translate-y-6"
+            >PhoneNumber</span
           >
         </label>
       </div>
