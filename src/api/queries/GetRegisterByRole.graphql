@@ -1,0 +1,10 @@
+query GetRegisterByRole($role: String!) {
+  GetRegisterByRole(role: $role) {
+    id
+    name
+    number
+    email
+    role
+    company
+  }
+}

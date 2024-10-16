@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen w-screen bg-black">
     <div
-      class="w-full px-10 block h-full md:flex md:w-full md:h-full md:flex-row justify-between"
+      class="w-full px-10 block h-full md:flex md:w-full md:h-full md:flex-row"
     >
       <div
         class="flex flex-col h-1/2 space-y-10 justify-center md:h-full md:w-1/2"
@@ -39,9 +39,10 @@
       </div>
 
       <button
-        class="text-white h-1/4 md:h-full md:w-1/3 flex justify-center items-center"
+        @click="openImg('https://i.ibb.co/FqnQTFG/forum-details.jpg')"
+        class="text-white h-1/2 md:h-full md:w-1/2 flex justify-center items-center"
       >
-        <img src="@/assets/forum-details.jpeg" alt="" />
+        <img src="@/assets/order.png" alt="" />
         <!-- <div class="bg-[#5CF8AD] h-full w-full">
           <p class="text-2xl font-bold space-y-6">hashsh</p>
         </div> -->
@@ -50,4 +51,8 @@
   </div>
 </template>
 
-<script></script>
+<script setup>
+function openImg(url) {
+  window.open(url, "_blank");
+}
+</script>

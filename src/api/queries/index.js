@@ -1,2 +1,11 @@
-const picker = (name) => require(`./${name}.graphql`);
-export default (type) => picker(type);
+import GetRegisterByRole from "./GetRegisterByRole.graphql";
+// import CreateCommitment from "./CreateCommitment.graphql";
+// import queryB from './queryB.graphql';
+
+const queries = {
+  GetRegisterByRole,
+  //   CreateCommitment,
+  //   queryB,
+};
+
+export default (type) => queries[type];

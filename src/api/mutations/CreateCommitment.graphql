@@ -1,0 +1,15 @@
+mutation CreateCommitment($input: CommitInput!) {
+  CreateCommitment(input: $input) {
+    id
+    register {
+      id
+      name
+      number
+      email
+      role
+      company
+    }
+    message
+    committedAt
+  }
+}

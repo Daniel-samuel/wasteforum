@@ -325,6 +325,11 @@ const httpLink_api = new HttpLink({
 });
 const apiHttpLink = errorLink.concat(httpLink_api);
 
+const httpLink_general = new HttpLink({
+  uri: `http://localhost:3000/graphql`,
+});
+const generalHttpLink = errorLink.concat(httpLink_general);
+
 const AUTH_API = getService(authHttpLink);
 const EMP_API = getService(empHttpLink);
 const PAYROLL_API = getService(payrollHttpLink);
@@ -333,6 +338,7 @@ const SETTINGS_API = getService(settingsHttpLink);
 const BOOKKEEPING_API = getService(bookKeepingHttpLink);
 const LOAN_API = getService(loanHttpLink);
 const DEV_API = getService(apiHttpLink);
+const GENERAL_API = getService(generalHttpLink);
 
 export const API = {
   AUTH_API,
@@ -343,6 +349,7 @@ export const API = {
   BOOKKEEPING_API,
   LOAN_API,
   DEV_API,
+  GENERAL_API,
 };
 
 export const upgradeTier = async () => {

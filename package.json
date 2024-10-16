@@ -7,10 +7,17 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@apollo/client": "^3.6.9",
+    "@vue/apollo-option": "^4.0.0-alpha.20",
+    "graphql": "^16.6.0",
+    "graphql-tag": "^2.12.6",
+    "axios": "^0.27.2",
+    "vue-toastification": "^2.0.0-rc.5",
     "core-js": "^3.6.5",
     "pinia": "^2.2.4",
     "pinia-plugin-persistedstate": "^4.1.1",
     "vue": "^3.0.0",
+    "vue-gtag": "^2.0.1",
     "vue-router": "^4.0.0-0"
   },
   "devDependencies": {

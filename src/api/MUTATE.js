@@ -6,9 +6,12 @@ import axios from "axios";
 const ip_endpoints = ["EmployeeLogin", "CompanyAdminLogin", "ResetPassword"];
 async function getIp() {
   try {
-    const locationResponse = await axios.get(`https://api.ipify.org?format=json`, {
-      headers: { "Content-Type": "application/json" },
-    });
+    const locationResponse = await axios.get(
+      `https://api.ipify.org?format=json`,
+      {
+        headers: { "Content-Type": "application/json" },
+      }
+    );
     return locationResponse.data.ip;
   } catch (e) {
     console.log(e);
@@ -37,16 +40,28 @@ export default async (endpoint, data, service) => {
   } else if (service == "EMP") {
     return API.EMP_API.mutate(PAYLOAD).then((result) => result.data[endpoint]);
   } else if (service == "PAYROLL") {
-    return API.PAYROLL_API.mutate(PAYLOAD).then((result) => result.data[endpoint]);
+    return API.PAYROLL_API.mutate(PAYLOAD).then(
+      (result) => result.data[endpoint]
+    );
   } else if (service == "PERFORMANCE") {
-    return API.PERFORMANCE_API.mutate(PAYLOAD).then((result) => result.data[endpoint]);
+    return API.PERFORMANCE_API.mutate(PAYLOAD).then(
+      (result) => result.data[endpoint]
+    );
   } else if (service == "SETTINGS") {
-    return API.SETTINGS_API.mutate(PAYLOAD).then((result) => result.data[endpoint]);
+    return API.SETTINGS_API.mutate(PAYLOAD).then(
+      (result) => result.data[endpoint]
+    );
   } else if (service == "BOOKKEEPING") {
-    return API.BOOKKEEPING_API.mutate(PAYLOAD).then((result) => result.data[endpoint]);
+    return API.BOOKKEEPING_API.mutate(PAYLOAD).then(
+      (result) => result.data[endpoint]
+    );
   } else if (service == "LOAN") {
     return API.LOAN_API.mutate(PAYLOAD).then((result) => result.data[endpoint]);
   } else if (service == "API") {
     return API.DEV_API.mutate(PAYLOAD).then((result) => result.data[endpoint]);
+  } else if (service == "GENERAL") {
+    return API.GENERAL_API.mutate(PAYLOAD).then(
+      (result) => result.data[endpoint]
+    );
   }
 };

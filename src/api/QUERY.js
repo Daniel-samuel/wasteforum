@@ -20,16 +20,28 @@ export default (endpoint, payload, service) => {
   } else if (service == "EMP") {
     return API.EMP_API.query(PAYLOAD).then((result) => result.data[endpoint]);
   } else if (service == "PAYROLL") {
-    return API.PAYROLL_API.query(PAYLOAD).then((result) => result.data[endpoint]);
+    return API.PAYROLL_API.query(PAYLOAD).then(
+      (result) => result.data[endpoint]
+    );
   } else if (service == "PERFORMANCE") {
-    return API.PERFORMANCE_API.query(PAYLOAD).then((result) => result.data[endpoint]);
+    return API.PERFORMANCE_API.query(PAYLOAD).then(
+      (result) => result.data[endpoint]
+    );
   } else if (service == "SETTINGS") {
-    return API.SETTINGS_API.query(PAYLOAD).then((result) => result.data[endpoint]);
+    return API.SETTINGS_API.query(PAYLOAD).then(
+      (result) => result.data[endpoint]
+    );
   } else if (service == "BOOKKEEPING") {
-    return API.BOOKKEEPING_API.query(PAYLOAD).then((result) => result.data[endpoint]);
+    return API.BOOKKEEPING_API.query(PAYLOAD).then(
+      (result) => result.data[endpoint]
+    );
   } else if (service == "LOAN") {
     return API.LOAN_API.query(PAYLOAD).then((result) => result.data[endpoint]);
   } else if (service == "API") {
     return API.DEV_API.query(PAYLOAD).then((result) => result.data[endpoint]);
+  } else if (service == "GENERAL") {
+    return API.GENERAL_API.query(PAYLOAD).then(
+      (result) => result.data[endpoint]
+    );
   }
 };

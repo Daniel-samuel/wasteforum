@@ -1,0 +1,10 @@
+mutation CreateRegister($input: RegisterInput!) {
+  CreateRegister(input: $input) {
+    id
+    name
+    number
+    email
+    role
+    company
+  }
+}
