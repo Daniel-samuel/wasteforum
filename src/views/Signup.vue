@@ -91,12 +91,21 @@
         </label>
       </div>
 
-      <button
-        type="submit"
-        class="w-84 py-4 bg-[#62CD9A] rounded-3xl focus:outline-none"
-      >
-        <span class="text-white">Submit</span>
-      </button>
+      <div class="flex flex-col gap-2">
+        <button
+          @click="$router.push({ name: 'Login' })"
+          class="bg-none focus:outline-none"
+        >
+          Already registered? <span class="text-[#5CF8AD]"> Login</span>
+        </button>
+
+        <button
+          type="submit"
+          class="w-84 py-4 bg-[#62CD9A] rounded-3xl focus:outline-none"
+        >
+          <span class="text-white">Submit</span>
+        </button>
+      </div>
     </form>
   </div>
 </template>
