@@ -7,7 +7,7 @@
           <p class="text-[#5CF8AD] text-2xl font-medium">Lawma</p>
         </div>
 
-        <p>Keeping lagos clean</p>
+        <p>Shakeholder's Forum</p>
       </div>
       <div class="w-full items-center flex flex-col space-y-6">
         <label class="relative">
