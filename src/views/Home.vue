@@ -7,7 +7,7 @@
         class="flex flex-col h-1/2 space-y-10 justify-center md:h-full md:w-1/2"
       >
         <div
-          class="flex items-center justify-center -mt-20 w-full space-x-4 md:justify-start"
+          class="flex items-center justify-center -mt-10 w-full space-x-4 md:justify-start"
         >
           <img src="@/assets/logolaw.svg" class="h-6 w-6" alt="" />
           <p class="text-[#5CF8AD] text-2xl font-medium uppercase">Lawma</p>

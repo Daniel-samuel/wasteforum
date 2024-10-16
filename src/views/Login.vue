@@ -17,7 +17,7 @@
           <input
             type="email"
             name="email"
-            class="w-84 pl-6 py-4 text-sm outline-none border-2 border-gray-400 rounded-3xl hover:border-gray-600 durarion -200 peer focus:border-[#5CF8AD] bg-inherit"
+            class="w-84 pl-6 py-4 text-md outline-none border-2 border-gray-400 rounded-3xl hover:border-gray-600 durarion -200 peer focus:border-[#5CF8AD] bg-inherit"
             v-model="args.email"
             required
           />
@@ -31,7 +31,7 @@
           <input
             type="text"
             name="number"
-            class="w-84 pl-6 py-4 text-sm outline-none border-2 border-gray-400 rounded-3xl hover:border-gray-600 durarion -200 peer focus:border-[#5CF8AD] bg-inherit"
+            class="w-84 pl-6 py-4 text-md outline-none border-2 border-gray-400 rounded-3xl hover:border-gray-600 durarion -200 peer focus:border-[#5CF8AD] bg-inherit"
             v-model="args.number"
             required
           />
