@@ -3,7 +3,7 @@
     <LoaderVue v-if="loading" />
     <form
       @submit.prevent="register()"
-      class="h-full w-full py-20 flex flex-col items-center space-y-16"
+      class="h-97 w-full py-20 flex flex-col items-center space-y-16"
     >
       <div class="text-white">
         <div class="flex w-full space-x-4">
