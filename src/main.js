@@ -5,6 +5,9 @@ import { createPinia } from "pinia";
 import piniaPluginPersistedstate from "pinia-plugin-persistedstate";
 import { createApolloProvider } from "@vue/apollo-option";
 import { API } from "./api/api";
+import Toast from "vue-toastification";
+
+import "vue-toastification/dist/index.css";
 
 import "./assets/tailwind.css";
 const apolloProvider = createApolloProvider({
@@ -12,4 +15,9 @@ const apolloProvider = createApolloProvider({
 });
 const pinia = createPinia();
 pinia.use(piniaPluginPersistedstate);
-createApp(App).use(router).use(pinia).use(apolloProvider).mount("#app");
+createApp(App)
+  .use(router)
+  .use(pinia)
+  .use(apolloProvider)
+  .use(Toast)
+  .mount("#app");

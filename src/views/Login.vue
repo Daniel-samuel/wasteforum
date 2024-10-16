@@ -74,10 +74,11 @@ const login = async () => {
     if (res) {
       window.localStorage.setItem("token", res.token);
       window.localStorage.setItem("data", JSON.stringify(res.user));
-      toast.success("Login successfully");
+      toast.success("Logged in successfully");
       router.push({ name: "Home" });
     }
   } catch (e) {
+    // toast.error(e.message);
     console.log(e);
   } finally {
     loading.value = false;
