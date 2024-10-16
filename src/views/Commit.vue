@@ -15,7 +15,7 @@
         <div
           class="text-white h-28 w-full rounded-2xl px-4 flex flex-col gap-3 justify-center"
         >
-          <P>Name: {{ data.name }}</P>
+          <p>Name: {{ data.name }}</p>
           <p>Email: {{ data.email }}</p>
           <p>Number: {{ data.number }}</p>
           <p>Role: {{ data.role }}</p>

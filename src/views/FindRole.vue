@@ -11,7 +11,7 @@
         <div
           class="bg-[#5CF8AD] text-black h-28 w-full rounded-2xl px-4 flex flex-col justify-center md:w-"
         >
-          <P>Name :</P>
+          <p>Name :</p>
           <p>Email</p>
           <p>Number</p>
           <p>Role</p>
@@ -22,7 +22,7 @@
           :key="i"
           class="bg-[#5CF8AD] text-black h-28 w-full rounded-2xl px-4 flex flex-col justify-center"
         >
-          <P>Name: {{ role.name }}</P>
+          <p>Name: {{ role.name }}</p>
           <p>Email: {{ role.email }}</p>
           <p>Number: {{ role.number }}</p>
           <p>Role: {{ role.role }}</p>
