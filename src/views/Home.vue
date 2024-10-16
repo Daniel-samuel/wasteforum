@@ -16,9 +16,9 @@
           <p
             class="text-2xl font-bold space-y-6 leading-loose md:text-5xl md:leading-loose md:font-semibold"
           >
-            Welcome <br /><span class="bg-[#5CF8AD] text-black px-2 py-2"
-              >Mr Daniel Samuel</span
-            >
+            Welcome <br /><span class="bg-[#5CF8AD] text-black px-2 py-2">
+              {{ data.name }}
+            </span>
           </p>
           <p>
             To the Lagos Waste Management Authority <br />
@@ -52,7 +52,16 @@
 </template>
 
 <script setup>
+import { onMounted, ref } from "vue";
+
+const data = ref({});
+
 function openImg(url) {
   window.open(url, "_blank");
 }
+
+onMounted(() => {
+  const user = window.localStorage.getItem("data");
+  data.value = JSON.parse(user);
+});
 </script>
