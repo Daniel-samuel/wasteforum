@@ -12,7 +12,7 @@
         class="flex flex-col justify-center items-center h-97 w-full space-y-10 md:w-96 md:justify-center"
       >
         <div
-          class="text-white h-28 w-full rounded-2xl px-4 flex flex-col justify-center"
+          class="text-white h-28 w-full rounded-2xl px-4 flex flex-col gap-3 justify-center"
         >
           <P>Name :</P>
           <p>Email:</p>

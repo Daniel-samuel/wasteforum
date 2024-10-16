@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen w-screen bg-black">
     <div
-      class="w-full px-10 block h-full md:flex md:w-full md:h-full md:flex-row"
+      class="w-full px-10 block h-full md:flex md:w-full md:h-full md:flex-row justify-between"
     >
       <div
         class="flex flex-col h-1/2 space-y-10 justify-center md:h-full md:w-1/2"
@@ -27,7 +27,8 @@
         </div>
 
         <button
-          class="rounded-3xl w-full text-left flex space-x-2 items-center"
+          class="rounded-3xl w-full text-left flex space-x-2 items-center focus:outline-none"
+          @click="$router.push({ name: 'Commit' })"
         >
           <span
             class="text-white font-medium text-lg underline underline-offset-8 decoration-[#5CF8AD]"
@@ -38,9 +39,9 @@
       </div>
 
       <button
-        class="text-white h-1/2 md:h-full md:w-1/2 flex justify-center items-center"
+        class="text-white h-1/4 md:h-full md:w-1/3 flex justify-center items-center"
       >
-        <img src="@/assets/order.png" alt="" />
+        <img src="@/assets/forum-details.jpeg" alt="" />
         <!-- <div class="bg-[#5CF8AD] h-full w-full">
           <p class="text-2xl font-bold space-y-6">hashsh</p>
         </div> -->
