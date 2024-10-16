@@ -22,7 +22,7 @@
           />
           <span
             class="absolute left-0 top-4 px-4 text-sm text-gray-400 tracking-wide peer-focus:text-[#5CF8AD] pointer-event-none duration-200 peer-focus:text-sm peer-focus:-translate-y-6 bg-black ml-6 peer-valid:text-sm peer-valid:-translate-y-6"
-            >Full Name</span
+            >Email</span
           >
         </label>
 
