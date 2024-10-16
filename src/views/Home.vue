@@ -10,7 +10,7 @@
           class="flex items-center justify-center -mt-20 w-full space-x-4 md:justify-start"
         >
           <img src="@/assets/logolaw.svg" class="h-6 w-6" alt="" />
-          <p class="text-[#5CF8AD] text-2xl font-medium">Lawma</p>
+          <p class="text-[#5CF8AD] text-2xl font-medium uppercase">Lawma</p>
         </div>
         <div class="flex flex-col space-y-6">
           <p

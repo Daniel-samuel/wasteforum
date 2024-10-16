@@ -7,7 +7,7 @@
       <div class="text-white">
         <div class="flex w-full space-x-4">
           <img src="@/assets/logolaw.svg" class="h-6 w-6" alt="" />
-          <p class="text-[#5CF8AD] text-2xl font-medium">Lawma</p>
+          <p class="text-[#5CF8AD] text-2xl font-medium uppercase">Lawma</p>
         </div>
 
         <p>Shakeholder's Forum</p>
