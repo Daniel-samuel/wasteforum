@@ -1,9 +1,11 @@
 <template>
-  <div class="h-screen w-screen bg-black bg-center">
+  <div
+    class="h-screen w-screen bg-black bg-center flex flex-col overflow-y-auto"
+  >
     <LoaderVue v-if="loading" />
     <form
       @submit.prevent="register()"
-      class="h-97 w-full py-20 flex flex-col items-center space-y-14"
+      class="h-97 w-full py-10 flex flex-col items-center space-y-14"
     >
       <div class="text-white">
         <div class="flex w-full space-x-4">
@@ -13,7 +15,7 @@
 
         <p>Shakeholder's Forum</p>
       </div>
-      <div class="w-full items-center flex flex-col space-y-6">
+      <div class="w-full items-center flex flex-col space-y-4">
         <label class="relative">
           <input
             type="text"
