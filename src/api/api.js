@@ -327,7 +327,7 @@ const apiHttpLink = errorLink.concat(httpLink_api);
 
 const httpLink_general = new HttpLink({
   // uri: `http://localhost:3000/graphql`,
-  uri: `https://wasteforumserver.onrender.com/`,
+  uri: `https://wasteforumserver.onrender.com/graphql`,
 });
 const generalHttpLink = errorLink.concat(httpLink_general);
 
