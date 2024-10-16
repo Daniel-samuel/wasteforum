@@ -16,7 +16,7 @@
             class="w-84 pl-6 py-4 text-md outline-none border-2 border-gray-400 rounded-3xl hover:border-gray-600 durarion -200 peer focus:border-[#5CF8AD] bg-inherit"
           />
           <span
-            class="absolute left-0 top-4 px-4 text-md text-gray-400 tracking-wide peer-focus:text-[#5CF8AD] pointer-event-none duration-200 peer-focus:text-sm peer-focus:-translate-y-6 bg-black ml-6"
+            class="absolute left-0 top-4 px-4 text-md text-gray-400 tracking-wide peer-focus:text-[#5CF8AD] pointer-event-none duration-200 peer-focus:text-sm peer-focus:-translate-y-6 bg-black ml-6 peer-valid:text-sm peer-valid:-translate-y-6"
             >Full Name</span
           >
         </label>
@@ -27,7 +27,7 @@
             class="w-84 pl-6 py-4 text-md outline-none border-2 border-gray-400 rounded-3xl hover:border-gray-600 durarion -200 peer focus:border-[#5CF8AD] bg-inherit"
           />
           <span
-            class="absolute left-0 top-4 px-4 text-md text-gray-400 tracking-wide peer-focus:text-[#5CF8AD] pointer-event-none duration-200 peer-focus:text-sm peer-focus:-translate-y-6 bg-black ml-6"
+            class="absolute left-0 top-4 px-4 text-md text-gray-400 tracking-wide peer-focus:text-[#5CF8AD] pointer-event-none duration-200 peer-focus:text-sm peer-focus:-translate-y-6 bg-black ml-6 peer-valid:text-sm peer-valid:-translate-y-6"
             >Number</span
           >
         </label>
@@ -38,7 +38,7 @@
             class="w-84 pl-6 py-4 text-md outline-none border-2 border-gray-400 rounded-3xl hover:border-gray-600 durarion -200 peer focus:border-[#5CF8AD] bg-inherit"
           />
           <span
-            class="absolute left-0 top-4 px-4 text-md text-gray-400 tracking-wide peer-focus:text-[#5CF8AD] pointer-event-none duration-200 peer-focus:text-sm peer-focus:-translate-y-6 bg-black ml-6"
+            class="absolute left-0 top-4 px-4 text-md text-gray-400 tracking-wide peer-focus:text-[#5CF8AD] pointer-event-none duration-200 peer-focus:text-sm peer-focus:-translate-y-6 bg-black ml-6 peer-valid:text-sm peer-valid:-translate-y-6"
             >Email</span
           >
         </label>
@@ -49,7 +49,7 @@
             class="w-84 pl-6 py-4 text-md outline-none border-2 border-gray-400 rounded-3xl hover:border-gray-600 durarion -200 peer focus:border-[#5CF8AD] bg-inherit"
           />
           <span
-            class="absolute left-0 top-4 px-4 text-md text-gray-400 tracking-wide peer-focus:text-[#5CF8AD] pointer-event-none duration-200 peer-focus:text-sm peer-focus:-translate-y-6 bg-black ml-6"
+            class="absolute left-0 top-4 px-4 text-md text-gray-400 tracking-wide peer-focus:text-[#5CF8AD] pointer-event-none duration-200 peer-focus:text-sm peer-focus:-translate-y-6 bg-black ml-6 peer-valid:text-sm peer-valid:-translate-y-6"
             >Company</span
           >
         </label>
@@ -60,7 +60,7 @@
             class="w-84 pl-6 py-4 text-md outline-none border-2 border-gray-400 rounded-3xl hover:border-gray-600 durarion -200 peer focus:border-[#5CF8AD] bg-inherit"
           />
           <span
-            class="absolute left-0 top-4 px-4 text-md text-gray-400 tracking-wide peer-focus:text-[#5CF8AD] pointer-event-none duration-200 peer-focus:text-sm peer-focus:-translate-y-6 bg-black ml-6"
+            class="absolute left-0 top-4 px-4 text-md text-gray-400 tracking-wide peer-focus:text-[#5CF8AD] pointer-event-none duration-200 peer-focus:text-sm peer-focus:-translate-y-6 bg-black ml-6 peer-valid:text-sm peer-valid:-translate-y-6"
             >Role</span
           >
         </label>
