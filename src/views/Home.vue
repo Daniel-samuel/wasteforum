@@ -40,7 +40,7 @@
       </div>
 
       <button
-        @click="openImg('https://i.ibb.co/FqnQTFG/forum-details.jpg')"
+        @click="openImg('https://i.ibb.co/RjPZ7r9/event.png')"
         class="text-white h-1/2 md:h-full md:w-1/2 flex justify-center items-center"
       >
         <img src="@/assets/order.png" alt="" />
