@@ -1,28 +1,27 @@
 <template>
   <div class="h-screen w-screen bg-black">
-    <div
-      class="w-full space-y-10 px-10 py-10 block h-full md:flex md:w-full md:h-full md:flex-row"
-    >
+    <div class="w-full space-y-10 px-10 py-10 block">
       <div>
         <p>List</p>
       </div>
 
-      <div class="flex flex-col gap-y-4 md:flex md:w-full md:h-full md:flex">
-        <div
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-y-3 gap-x-6">
+        <!-- <div
           class="bg-[#5CF8AD] text-black h-28 w-full rounded-2xl px-4 flex flex-col justify-center md:w-"
         >
           <p>Name :</p>
           <p>Email</p>
           <p>Number</p>
           <p>Role</p>
-        </div>
+        </div> -->
 
         <div
           v-for="(role, i) in getRoles"
           :key="i"
-          class="bg-[#5CF8AD] text-black h-28 w-full rounded-2xl px-4 flex flex-col justify-center"
+          class="bg-[#5CF8AD] text-black h-40 pt-5 gap-4 w-full rounded-2xl px-4 flex-col justify-center"
         >
           <p>Name: {{ role.name }}</p>
+          <p>Company: {{ role.company }}</p>
           <p>Email: {{ role.email }}</p>
           <p>Number: {{ role.number }}</p>
           <p>Role: {{ role.role }}</p>
