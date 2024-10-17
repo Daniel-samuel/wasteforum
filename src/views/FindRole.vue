@@ -1,6 +1,8 @@
 <template>
-  <div class="h-screen w-screen bg-black">
-    <div class="w-full space-y-10 px-10 py-10 block">
+  <div class="h-screen w-screen bg-black flex flec-col overflow-y-auto">
+    <div
+      class="w-full space-y-10 px-10 py-10 block h-full md:flex md:w-full md:h-full md:flex-row"
+    >
       <div>
         <p>List</p>
       </div>
