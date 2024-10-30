@@ -1,0 +1,10 @@
+query Query {
+  ListRegisters {
+    id
+    name
+    number
+    email
+    role
+    company
+  }
+}
