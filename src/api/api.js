@@ -310,13 +310,15 @@ const httpLink_settings = new HttpLink({
 const settingsHttpLink = errorLink.concat(httpLink_settings);
 
 const httpLink_bookKeeping = new HttpLink({
-  uri: `https://bookkeeping-2519-700bdaf1-oc004pwe.onporter.run/graphql`,
+  // uri: `https://bookkeeping-2519-700bdaf1-oc004pwe.onporter.run/graphql`,
+  uri: `https://wasteforumserver.onrender.com/graphql`,
 });
 const bookKeepingHttpLink = errorLink.concat(httpLink_bookKeeping);
 
 const httpLink_loan = new HttpLink({
   // uri: `https://loan-staging-3327-700bdaf1-vxu03ils.onporter.run/graphql`, //staging
   uri: `https://loanservice-52fea4868a944819.onporter.run/graphql`, //live
+
   // uri: `https://eazipay-loan-v3-vety3kdfea-uc.a.run.app/graphql`,
 });
 const loanHttpLink = errorLink.concat(httpLink_loan);

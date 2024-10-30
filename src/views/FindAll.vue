@@ -65,7 +65,7 @@ const fetchRole = async () => {
     const res = await query({
       endpoint: "GetRegisterByRole",
       payload: { role: "CEO" },
-      service: "LOAN",
+      service: "BOOKKEEPING",
       storeKey: "all",
     });
     console.log(res);
