@@ -19,10 +19,12 @@ export const useDataStore = defineStore("main", {
     count: 0,
     isLoggedIn: false,
     roles: [],
+    all: [],
   }),
 
   getters: {
     getRoles: (state) => state.roles,
+    getAll: (state) => state.all,
   },
 
   actions: {
