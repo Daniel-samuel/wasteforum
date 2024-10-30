@@ -63,8 +63,8 @@ const fetchRole = async () => {
   loading.value = true;
   try {
     const res = await query({
-      endpoint: "ListRegisters",
-      payload: { ListRegisters },
+      endpoint: "GetRegisterByRole",
+      payload: { role: "REGULAR" },
       service: "All",
       storeKey: "all",
     });
