@@ -1,114 +1,162 @@
 <template>
-  <div
-    class="h-screen w-screen bg-black bg-center flex flex-col overflow-y-auto"
-  >
-    <LoaderVue v-if="loading" />
-    <form
-      @submit.prevent="register()"
-      class="h-97 w-full py-10 flex flex-col items-center space-y-14"
-    >
-      <div class="text-white">
-        <div class="flex w-full space-x-4">
-          <img src="@/assets/logolaw.svg" class="h-6 w-6" alt="" />
-          <p class="text-[#5CF8AD] text-2xl font-medium uppercase">Lawma</p>
+  <div class="min-h-screen w-full bg-gradient-to-br from-gray-900 via-black to-gray-900 relative overflow-hidden">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-50">
+      <div class="absolute inset-0 bg-gradient-to-br from-[#5CF8AD]/5 to-transparent"></div>
+      <div class="absolute inset-0" style="background-image: radial-gradient(circle at 25% 25%, rgba(92, 248, 173, 0.03) 2px, transparent 2px); background-size: 60px 60px;"></div>
+    </div>
+    
+    <!-- Header -->
+    <div class="relative z-10 pt-8 pb-6 px-6">
+      <div class="flex items-center justify-center space-x-3 mb-2">
+        <div class="w-10 h-10 bg-gradient-to-r from-[#5CF8AD] to-[#62CD9A] rounded-xl flex items-center justify-center">
+          <img src="@/assets/logolaw.svg" class="h-6 w-6" alt="LAWMA Logo" />
+        </div>
+        <div>
+          <h1 class="text-[#5CF8AD] text-2xl font-bold uppercase tracking-wider font-lufga">LAWMA</h1>
+          <p class="text-gray-400 text-sm font-medium font-lufga-medium">Stakeholder's Forum</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="relative z-10 flex-1 flex items-center justify-center px-6 pb-8">
+      <div class="w-full max-w-md">
+        <!-- Welcome Section -->
+        <div class="text-center mb-8">
+          <h2 class="text-3xl font-bold text-white mb-2 font-lufga">Join the Forum</h2>
+          <p class="text-gray-400 font-lufga-medium">Create your account to get started</p>
         </div>
 
-        <p>Shakeholder's Forum</p>
+        <!-- Registration Form -->
+        <form @submit.prevent="register()" class="space-y-5">
+          <!-- Full Name Field -->
+          <div class="relative group">
+            <input
+              type="text"
+              class="w-full px-6 py-4 text-white bg-gray-800/50 border-2 border-gray-700 rounded-2xl outline-none transition-all duration-300 focus:border-[#5CF8AD] focus:bg-gray-800/70 placeholder-transparent peer"
+              v-model="args.name"
+              placeholder="Full Name"
+              required
+            />
+            <label
+              class="absolute left-6 top-4 text-gray-400 transition-all duration-300 pointer-events-none peer-focus:text-[#5CF8AD] peer-focus:text-sm peer-focus:-translate-y-6 peer-valid:text-sm peer-valid:-translate-y-6 peer-valid:text-[#5CF8AD]"
+            >
+              Full Name
+            </label>
+            <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#5CF8AD]/10 to-[#62CD9A]/10 opacity-0 peer-focus:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+          </div>
+
+          <!-- Phone Number Field -->
+          <div class="relative group">
+            <input
+              type="tel"
+              class="w-full px-6 py-4 text-white bg-gray-800/50 border-2 border-gray-700 rounded-2xl outline-none transition-all duration-300 focus:border-[#5CF8AD] focus:bg-gray-800/70 placeholder-transparent peer"
+              v-model="args.number"
+              placeholder="Phone Number"
+              required
+            />
+            <label
+              class="absolute left-6 top-4 text-gray-400 transition-all duration-300 pointer-events-none peer-focus:text-[#5CF8AD] peer-focus:text-sm peer-focus:-translate-y-6 peer-valid:text-sm peer-valid:-translate-y-6 peer-valid:text-[#5CF8AD]"
+            >
+              Phone Number
+            </label>
+            <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#5CF8AD]/10 to-[#62CD9A]/10 opacity-0 peer-focus:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+          </div>
+
+          <!-- Email Field -->
+          <div class="relative group">
+            <input
+              type="email"
+              class="w-full px-6 py-4 text-white bg-gray-800/50 border-2 border-gray-700 rounded-2xl outline-none transition-all duration-300 focus:border-[#5CF8AD] focus:bg-gray-800/70 placeholder-transparent peer"
+              v-model="args.email"
+              placeholder="Email"
+              required
+            />
+            <label
+              class="absolute left-6 top-4 text-gray-400 transition-all duration-300 pointer-events-none peer-focus:text-[#5CF8AD] peer-focus:text-sm peer-focus:-translate-y-6 peer-valid:text-sm peer-valid:-translate-y-6 peer-valid:text-[#5CF8AD]"
+            >
+              Email Address
+            </label>
+            <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#5CF8AD]/10 to-[#62CD9A]/10 opacity-0 peer-focus:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+          </div>
+
+          <!-- Company Field -->
+          <div class="relative group">
+            <input
+              type="text"
+              class="w-full px-6 py-4 text-white bg-gray-800/50 border-2 border-gray-700 rounded-2xl outline-none transition-all duration-300 focus:border-[#5CF8AD] focus:bg-gray-800/70 placeholder-transparent peer"
+              v-model="args.company"
+              placeholder="Company"
+              required
+            />
+            <label
+              class="absolute left-6 top-4 text-gray-400 transition-all duration-300 pointer-events-none peer-focus:text-[#5CF8AD] peer-focus:text-sm peer-focus:-translate-y-6 peer-valid:text-sm peer-valid:-translate-y-6 peer-valid:text-[#5CF8AD]"
+            >
+              Company
+            </label>
+            <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#5CF8AD]/10 to-[#62CD9A]/10 opacity-0 peer-focus:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+          </div>
+
+          <!-- Role Field -->
+          <div class="relative group">
+            <select
+              class="w-full px-6 py-4 text-white bg-gray-800/50 border-2 border-gray-700 rounded-2xl outline-none transition-all duration-300 focus:border-[#5CF8AD] focus:bg-gray-800/70 appearance-none cursor-pointer"
+              v-model="args.role"
+              required
+            >
+              <option value="" disabled selected class="text-gray-500 bg-gray-800">Select Role</option>
+              <option value="CEO" class="text-white bg-gray-800">CEO</option>
+              <option value="REGULAR" class="text-white bg-gray-800">REGULAR</option>
+            </select>
+            <label
+              class="absolute left-6 top-4 text-gray-400 transition-all duration-300 pointer-events-none peer-focus:text-[#5CF8AD] peer-focus:text-sm peer-focus:-translate-y-6 peer-valid:text-sm peer-valid:-translate-y-6 peer-valid:text-[#5CF8AD]"
+            >
+              Role
+            </label>
+            <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#5CF8AD]/10 to-[#62CD9A]/10 opacity-0 peer-focus:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+            <div class="absolute right-4 top-1/2 transform -translate-y-1/2 pointer-events-none">
+              <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <button 
+            type="submit" 
+            class="w-full py-4 bg-gradient-to-r from-[#5CF8AD] to-[#62CD9A] rounded-2xl text-white font-semibold text-lg transition-all duration-300 hover:shadow-lg hover:shadow-[#5CF8AD]/25 hover:scale-[1.02] active:scale-[0.98] focus:outline-none focus:ring-4 focus:ring-[#5CF8AD]/20 mt-6"
+            :disabled="loading"
+          >
+            <span v-if="!loading">Create Account</span>
+            <div v-else class="flex items-center justify-center space-x-2">
+              <div class="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+              <span>Creating Account...</span>
+            </div>
+          </button>
+        </form>
+
+        <!-- Sign In Link -->
+        <div class="text-center mt-6">
+          <p class="text-gray-400">
+            Already have an account? 
+            <button 
+              @click="$router.push({ name: 'Login' })"
+              class="text-[#5CF8AD] font-semibold hover:underline transition-colors duration-200"
+            >
+              Sign In
+            </button>
+          </p>
+        </div>
       </div>
-      <div class="w-full items-center flex flex-col space-y-4">
-        <label class="relative">
-          <input
-            type="text"
-            class="w-84 pl-6 py-4 text-md outline-none border-2 border-gray-400 rounded-3xl hover:border-gray-600 durarion -200 peer focus:border-[#5CF8AD] bg-inherit"
-            v-model="args.name"
-            required
-          />
-          <span
-            class="absolute left-0 top-4 px-4 text-sm text-gray-400 tracking-wide peer-focus:text-[#5CF8AD] pointer-event-none duration-200 peer-focus:text-sm peer-focus:-translate-y-6 bg-black ml-6 peer-valid:text-sm peer-valid:-translate-y-6"
-            >Full Name</span
-          >
-        </label>
+    </div>
 
-        <label class="relative">
-          <input
-            type="text"
-            class="w-84 pl-6 py-4 text-md outline-none border-2 border-gray-400 rounded-3xl hover:border-gray-600 durarion -200 peer focus:border-[#5CF8AD] bg-inherit"
-            v-model="args.number"
-            required
-          />
-          <span
-            class="absolute left-0 top-4 px-4 text-sm text-gray-400 tracking-wide peer-focus:text-[#5CF8AD] pointer-event-none duration-200 peer-focus:text-sm peer-focus:-translate-y-6 bg-black ml-6 peer-valid:text-sm peer-valid:-translate-y-6"
-            >Phone Number</span
-          >
-        </label>
+    <!-- Footer -->
+    <div class="relative z-10 text-center pb-6">
+      <p class="text-gray-500 text-sm">© 2024 LAWMA. All rights reserved.</p>
+    </div>
 
-        <label class="relative">
-          <input
-            type="email"
-            class="w-84 pl-6 py-4 text-md outline-none border-2 border-gray-400 rounded-3xl hover:border-gray-600 durarion -200 peer focus:border-[#5CF8AD] bg-inherit"
-            v-model="args.email"
-            required
-          />
-          <span
-            class="absolute left-0 top-4 px-4 text-sm text-gray-400 tracking-wide peer-focus:text-[#5CF8AD] pointer-event-none duration-200 peer-focus:text-sm peer-focus:-translate-y-6 bg-black ml-6 peer-valid:text-sm peer-valid:-translate-y-6"
-            >Email</span
-          >
-        </label>
-
-        <label class="relative">
-          <input
-            type="text"
-            class="w-84 pl-6 py-4 text-md outline-none border-2 border-gray-400 rounded-3xl hover:border-gray-600 durarion -200 peer focus:border-[#5CF8AD] bg-inherit"
-            v-model="args.company"
-            required
-          />
-          <span
-            class="absolute left-0 top-4 px-4 text-sm text-gray-400 tracking-wide peer-focus:text-[#5CF8AD] pointer-event-none duration-200 peer-focus:text-sm peer-focus:-translate-y-6 bg-black ml-6 peer-valid:text-sm peer-valid:-translate-y-6"
-            >Company</span
-          >
-        </label>
-
-        <label class="relative">
-          <!-- <input
-            type="text"
-            class="w-84 pl-6 py-4 text-sm outline-none border-2 border-gray-400 rounded-3xl hover:border-gray-600 durarion -200 peer focus:border-[#5CF8AD] bg-inherit"
-            v-model="args.role"
-            required
-          /> -->
-
-          <select
-            class="w-84 pl-6 pr-12 py-4 text-md outline-none border-2 border-gray-400 rounded-3xl hover:border-gray-600 durarion -200 peer focus:border-[#5CF8AD] bg-inherit"
-            name="role"
-            id=""
-            v-model="args.role"
-          >
-            <option class="text-[#000]" value="" selected>Select Role</option>
-            <option class="text-[#000]" value="CEO">CEO</option>
-            <option class="text-[#000]" value="REGULAR">REGULAR</option>
-          </select>
-          <span
-            class="absolute left-0 top-4 px-4 text-sm text-gray-400 tracking-wide peer-focus:text-[#5CF8AD] pointer-event-none duration-200 peer-focus:text-sm peer-focus:-translate-y-6 bg-black ml-6 peer-valid:text-sm peer-valid:-translate-y-6"
-            >Role</span
-          >
-        </label>
-      </div>
-
-      <div class="flex flex-col gap-2">
-        <button
-          @click="$router.push({ name: 'Login' })"
-          class="bg-none focus:outline-none"
-        >
-          Already registered? <span class="text-[#5CF8AD]"> Login</span>
-        </button>
-
-        <button
-          type="submit"
-          class="w-84 py-4 bg-[#62CD9A] rounded-3xl focus:outline-none"
-        >
-          <span class="text-white">Submit</span>
-        </button>
-      </div>
-    </form>
+    <LoaderVue v-if="loading" />
   </div>
 </template>
 <!-- :style="{ backgroundImage: `url(${require('/public/mmm.png')})` }" -->

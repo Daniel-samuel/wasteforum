@@ -10,6 +10,7 @@ import Toast from "vue-toastification";
 import "vue-toastification/dist/index.css";
 
 import "./assets/tailwind.css";
+import "./assets/fonts.css";
 const apolloProvider = createApolloProvider({
   defaultClient: API,
 });
