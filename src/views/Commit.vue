@@ -1,31 +1,57 @@
 <template>
-  <div class="min-h-screen w-full bg-gradient-to-br from-gray-900 via-black to-gray-900 relative overflow-hidden">
+  <div
+    class="min-h-screen w-full bg-gradient-to-br from-gray-900 via-black to-gray-900 relative overflow-hidden"
+  >
     <!-- Background Pattern -->
     <div class="absolute inset-0 opacity-50">
-      <div class="absolute inset-0 bg-gradient-to-br from-[#5CF8AD]/5 to-transparent"></div>
-      <div class="absolute inset-0" style="background-image: radial-gradient(circle at 25% 25%, rgba(92, 248, 173, 0.03) 2px, transparent 2px); background-size: 60px 60px;"></div>
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-[#5CF8AD]/5 to-transparent"
+      ></div>
+      <div
+        class="absolute inset-0"
+        style="
+          background-image: radial-gradient(
+            circle at 25% 25%,
+            rgba(92, 248, 173, 0.03) 2px,
+            transparent 2px
+          );
+          background-size: 60px 60px;
+        "
+      ></div>
     </div>
-    
+
     <!-- Header -->
     <div class="relative z-10 pt-8 pb-6 px-6">
       <div class="flex items-center justify-center space-x-3 mb-2">
-        <div class="w-10 h-10 bg-gradient-to-r from-[#5CF8AD] to-[#62CD9A] rounded-xl flex items-center justify-center">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center">
           <img src="@/assets/logolaw.svg" class="h-6 w-6" alt="LAWMA Logo" />
         </div>
         <div>
-          <h1 class="text-[#5CF8AD] text-2xl font-bold uppercase tracking-wider font-lufga">LAWMA</h1>
-          <p class="text-gray-400 text-sm font-medium font-lufga-medium">Stakeholder's Forum</p>
+          <h1
+            class="text-[#FE6A01] text-2xl font-bold uppercase tracking-wider font-lufga"
+          >
+            LAWMA
+          </h1>
+          <p class="text-gray-400 text-sm font-medium font-lufga-medium">
+            Stakeholder's Forum
+          </p>
         </div>
       </div>
     </div>
 
     <!-- Main Content -->
-    <div class="relative z-10 flex-1 flex items-center justify-center px-6 pb-8">
+    <div
+      class="relative z-10 flex-1 flex items-center justify-center px-6 pb-8"
+    >
       <div class="w-full max-w-2xl">
         <!-- Page Title -->
         <div class="text-center mb-8">
-          <h2 class="text-3xl font-bold text-white mb-2 font-lufga">Make Your Commitment</h2>
-          <p class="text-gray-400 font-lufga-medium">Share your pledge for sustainable waste management</p>
+          <h2 class="text-3xl font-bold text-white mb-2 font-lufga">
+            Make Your Commitment
+          </h2>
+          <p class="text-gray-400 font-lufga-medium">
+            Share your pledge for sustainable waste management
+          </p>
         </div>
 
         <!-- User Info Card -->
@@ -33,31 +59,33 @@
           v-if="data"
           class="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-6 mb-8"
         >
-          <h3 class="text-[#5CF8AD] font-semibold text-lg mb-4">Your Profile</h3>
+          <h3 class="text-[#FE6A01] font-semibold text-lg mb-4">
+            Your Profile
+          </h3>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div class="flex items-center space-x-3">
-              <div class="w-2 h-2 bg-[#5CF8AD] rounded-full"></div>
+              <div class="w-2 h-2 bg-[#FE6A01] rounded-full"></div>
               <div>
                 <p class="text-gray-400 text-sm">Name</p>
                 <p class="text-white font-medium">{{ data.name }}</p>
               </div>
             </div>
             <div class="flex items-center space-x-3">
-              <div class="w-2 h-2 bg-[#5CF8AD] rounded-full"></div>
+              <div class="w-2 h-2 bg-[#FE6A01] rounded-full"></div>
               <div>
                 <p class="text-gray-400 text-sm">Email</p>
                 <p class="text-white font-medium">{{ data.email }}</p>
               </div>
             </div>
             <div class="flex items-center space-x-3">
-              <div class="w-2 h-2 bg-[#5CF8AD] rounded-full"></div>
+              <div class="w-2 h-2 bg-[#FE6A01] rounded-full"></div>
               <div>
                 <p class="text-gray-400 text-sm">Phone</p>
                 <p class="text-white font-medium">{{ data.number }}</p>
               </div>
             </div>
             <div class="flex items-center space-x-3">
-              <div class="w-2 h-2 bg-[#5CF8AD] rounded-full"></div>
+              <div class="w-2 h-2 bg-[#FE6A01] rounded-full"></div>
               <div>
                 <p class="text-gray-400 text-sm">Role</p>
                 <p class="text-white font-medium">{{ data.role }}</p>
@@ -68,6 +96,50 @@
 
         <!-- Commitment Form -->
         <form @submit.prevent="commit" class="space-y-6">
+          <!-- Pledge Statement -->
+          <div
+            class="bg-gray-800/40 border border-gray-700 rounded-2xl p-6 space-y-4 relative group"
+          >
+            <p class="text-gray-300 text-sm leading-relaxed">
+              <strong>Pledge Statement:</strong><br />
+              “I hereby pledge to abide by all regulations set forth by LAWMA
+              regarding the safe handling, transportation, and disposal of
+              construction and demolition waste. I understand that compliance is
+              essential for maintaining environmental safety, public health, and
+              sustainable development.”
+            </p>
+            <label class="flex items-center space-x-3 text-sm text-gray-300">
+              <input
+                type="checkbox"
+                v-model="pledgeAccepted"
+                class="w-5 h-5 text-[#5CF8AD] bg-gray-700 border-gray-600 rounded focus:ring-[#5CF8AD]"
+                required
+              />
+              <span>I agree to this pledge</span>
+            </label>
+
+            <!-- Focus Glow -->
+            <div
+              class="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#5CF8AD]/10 to-[#62CD9A]/10 opacity-0 peer-focus:opacity-100 transition-opacity duration-300 pointer-events-none"
+            ></div>
+          </div>
+
+          <!-- Submit Button -->
+          <button
+            type="submit"
+            class="w-full py-4 bg-gradient-to-r from-[#FE6A01] to-[#62CD9A] rounded-2xl text-white font-semibold text-lg transition-all duration-300 hover:shadow-lg hover:shadow-[#5CF8AD]/25 hover:scale-[1.02] active:scale-[0.98] focus:outline-none focus:ring-4 focus:ring-[#5CF8AD]/20"
+            :disabled="loading || !pledgeAccepted"
+          >
+            <span v-if="!loading">Submit Pledge</span>
+            <div v-else class="flex items-center justify-center space-x-2">
+              <div
+                class="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"
+              ></div>
+              <span>Submitting...</span>
+            </div>
+          </button>
+        </form>
+        <!-- <form @submit.prevent="commit" class="space-y-6">
           <div class="relative group">
             <textarea
               class="w-full p-6 h-64 text-white bg-gray-800/50 border-2 border-gray-700 rounded-2xl outline-none transition-all duration-300 focus:border-[#5CF8AD] focus:bg-gray-800/70 placeholder-transparent peer resize-none"
@@ -83,7 +155,7 @@
             <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-[#5CF8AD]/10 to-[#62CD9A]/10 opacity-0 peer-focus:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
           </div>
 
-          <!-- Submit Button -->
+        
           <button 
             type="submit" 
             class="w-full py-4 bg-gradient-to-r from-[#5CF8AD] to-[#62CD9A] rounded-2xl text-white font-semibold text-lg transition-all duration-300 hover:shadow-lg hover:shadow-[#5CF8AD]/25 hover:scale-[1.02] active:scale-[0.98] focus:outline-none focus:ring-4 focus:ring-[#5CF8AD]/20"
@@ -95,16 +167,26 @@
               <span>Submitting...</span>
             </div>
           </button>
-        </form>
+        </form> -->
 
         <!-- Back to Home -->
         <div class="text-center mt-6">
-          <button 
+          <button
             @click="$router.push({ name: 'Home' })"
-            class="text-gray-400 hover:text-[#5CF8AD] transition-colors duration-200 flex items-center justify-center space-x-2 mx-auto"
+            class="text-gray-400 hover:text-[#FE6A01] transition-colors duration-200 flex items-center justify-center space-x-2 mx-auto"
           >
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M10 19l-7-7m0 0l7-7m-7 7h18"
+              ></path>
             </svg>
             <span>Back to Home</span>
           </button>
@@ -130,12 +212,13 @@ import { useRouter } from "vue-router";
 import { useToast } from "vue-toastification";
 import LoaderVue from "./Loader.vue";
 
+const pledgeAccepted = ref(true);
 const toast = useToast();
 const router = useRouter();
 const store = useDataStore();
 const loading = ref(false);
 const { mutate } = store;
-const args = ref({ message: "", register: "" });
+const args = ref({ message: "Accepted", register: "" });
 const commit = async () => {
   loading.value = true;
   try {
