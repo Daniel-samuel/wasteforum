@@ -102,11 +102,12 @@
           >
             <p class="text-gray-300 text-sm leading-relaxed">
               <strong>Pledge Statement:</strong><br />
-              “I hereby pledge to abide by all regulations set forth by LAWMA
-              regarding the safe handling, transportation, and disposal of
-              construction and demolition waste. I understand that compliance is
-              essential for maintaining environmental safety, public health, and
-              sustainable development.”
+              “As a stakeholder in Construction, Demolition, and Disaster Waste
+              Management, I pledge to support and comply with relevant policies,
+              regulations, and best practices. I will prioritize sustainable
+              waste management, reduce environmental impact, and promote
+              responsible practices. I commit to collaborating with stakeholders
+              to drive innovation and excellence in waste management.”
             </p>
             <label class="flex items-center space-x-3 text-sm text-gray-300">
               <input
