@@ -168,7 +168,7 @@
                     10:20 am - 11:00 am
                   </p>
                   <p class="text-sm mb-2">Goodwill messages</p>
-                  <p
+                  <!-- <p
                     class="bg-[#379700] text-[#000000] text-black px-2 py-1 text-xs font-medium inline-block mb-3"
                   >
                     Speakers
@@ -267,7 +267,7 @@
                       </p>
                     </div>
                     <hr class="border-white border-opacity-30" />
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
