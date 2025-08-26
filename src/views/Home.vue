@@ -370,7 +370,7 @@
                       </p>
                       <p class="text-sm">
                         <span class="text-white">Organization:</span>
-                        <span class="text-[#5CF8AD]">FNIVS,RSV,FCAI,PSLC</span>
+                        <span class="text-[#5CF8AD]">Fiabci Nigeria</span>
                       </p>
                       <p class="text-sm">
                         <span class="text-white">Position Held:</span>
