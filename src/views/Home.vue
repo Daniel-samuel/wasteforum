@@ -354,7 +354,6 @@
                         >
                       </p>
                       <p class="text-sm">
-                        <span class="text-white">To Do:</span>
                         <span class="text-[#5CF8AD] font-medium"
                           >Moderator</span
                         >
@@ -377,7 +376,6 @@
                         <span class="text-[#5CF8AD]">Chapter President</span>
                       </p>
                       <p class="text-sm">
-                        <span class="text-white">To Do:</span>
                         <span class="text-[#5CF8AD] font-medium">Panelist</span>
                       </p>
                     </div>
@@ -398,7 +396,6 @@
                         <span class="text-[#5CF8AD]">General Manager</span>
                       </p>
                       <p class="text-sm">
-                        <span class="text-white">To Do:</span>
                         <span class="text-[#5CF8AD] font-medium">Panelist</span>
                       </p>
                     </div>
@@ -422,7 +419,6 @@
                         <span class="text-[#5CF8AD]"></span>
                       </p>
                       <p class="text-sm">
-                        <span class="text-white">To Do:</span>
                         <span class="text-[#5CF8AD] font-medium">Panelist</span>
                       </p>
                     </div>
@@ -445,7 +441,6 @@
                         <span class="text-[#5CF8AD]">Permanent Secretary</span>
                       </p>
                       <p class="text-sm">
-                        <span class="text-white">To Do:</span>
                         <span class="text-[#5CF8AD] font-medium">Panelist</span>
                       </p>
                     </div>
@@ -470,7 +465,6 @@
                         >
                       </p>
                       <p class="text-sm">
-                        <span class="text-white">To Do:</span>
                         <span class="text-[#5CF8AD] font-medium">Panelist</span>
                       </p>
                     </div>
