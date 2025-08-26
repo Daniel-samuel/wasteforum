@@ -344,12 +344,14 @@
                       <p class="text-sm">
                         <span class="text-white">Organization:</span>
                         <span class="text-[#5CF8AD]"
-                          >Lagos State Safety Commission</span
+                          >Pilar & Frames Limited</span
                         >
                       </p>
                       <p class="text-sm">
                         <span class="text-white">Position Held:</span>
-                        <span class="text-[#5CF8AD]">Director General</span>
+                        <span class="text-[#5CF8AD]"
+                          >Chief Executive Officer</span
+                        >
                       </p>
                       <p class="text-sm">
                         <span class="text-white">To Do:</span>
