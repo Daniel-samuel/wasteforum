@@ -149,7 +149,7 @@
                     Welcome/Opening Address/ Road map & Technical
                   </p>
                   <p
-                    class="bg-[#5CF8AD] text-[#000000] px-2 py-1 text-xs font-medium inline-block"
+                    class="bg-[#379700] text-[#000000] px-2 py-1 text-xs font-medium inline-block"
                   >
                     Speaker: Dr Muyiwa Gbadegesin MD/CEO
                   </p>
@@ -169,7 +169,7 @@
                   </p>
                   <p class="text-sm mb-2">Goodwill messages</p>
                   <p
-                    class="bg-[#5CF8AD] text-[#000000] text-black px-2 py-1 text-xs font-medium inline-block mb-3"
+                    class="bg-[#379700] text-[#000000] text-black px-2 py-1 text-xs font-medium inline-block mb-3"
                   >
                     Speakers
                   </p>
@@ -284,7 +284,7 @@
                   </p>
                   <p class="text-sm mb-2">Keynote Addresses</p>
                   <p
-                    class="bg-[#5CF8AD] text-[#000000] px-2 py-1 text-xs font-medium inline-block mb-2"
+                    class="bg-[#379700] text-[#000000] px-2 py-1 text-xs font-medium inline-block mb-2"
                   >
                     Speaker: Hon. Commissioner of Environment and Water Resource
                     - Mr. Tokunbo Wahab
@@ -295,14 +295,14 @@
                     Guest Speaker:
                   </p>
                   <p
-                    class="bg-[#5CF8AD] text-[#000000] px-2 py-1 text-xs font-semibold inline-block mb-2"
+                    class="bg-[#379700] text-[#000000] px-2 py-1 text-xs font-semibold inline-block mb-2"
                   >
                     Topic 1 - BRIDGING THE GAP BETWEEN POLICY AND PRACTICE:
                     STRENGTHENING COMPLIANCE IN CONSTRUCTION AND DEMOLITION
                     WASTE MANAGEMENT
                   </p>
                   <p
-                    class="bg-[#5CF8AD] text-[#000000] px-2 py-1 text-xs font-medium inline-block"
+                    class="bg-[#379700] text-[#000000] px-2 py-1 text-xs font-medium inline-block"
                   >
                     Speaker: Engr Tijani Ajibola
                   </p>
@@ -322,7 +322,7 @@
                   </p>
                   <p class="text-sm mb-2">Panel Session</p>
                   <p
-                    class="bg-[#5CF8AD] text-[#000000] px-2 py-1 text-xs font-semibold inline-block mb-3"
+                    class="bg-[#379700] text-[#000000] px-2 py-1 text-xs font-semibold inline-block mb-3"
                   >
                     Topic I - Driving Accountability in Urban Waste Systems: The
                     Role of Professional Associations and Industry
@@ -370,13 +370,11 @@
                       </p>
                       <p class="text-sm">
                         <span class="text-white">Organization:</span>
-                        <span class="text-[#5CF8AD]"
-                          >Julius Berger, Nigeria/Hitech /Elalan</span
-                        >
+                        <span class="text-[#5CF8AD]">FNIVS,RSV,FCAI,PSLC</span>
                       </p>
                       <p class="text-sm">
                         <span class="text-white">Position Held:</span>
-                        <span class="text-[#5CF8AD]">Managing Director</span>
+                        <span class="text-[#5CF8AD]">Chapter President</span>
                       </p>
                       <p class="text-sm">
                         <span class="text-white">To Do:</span>
@@ -538,7 +536,7 @@
                   </p>
                   <p class="text-sm mb-2">Vote of Thanks</p>
                   <p
-                    class="bg-[#5CF8AD] text-[#000000] px-2 py-1 text-xs font-medium inline-block"
+                    class="bg-[#379700] text-[#000000] px-2 py-1 text-xs font-medium inline-block"
                   >
                     By: Kunle Adebiyi
                   </p>
